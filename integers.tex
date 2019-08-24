@@ -1,17 +1,38 @@
 \documentclass{article}
 \begin{document}
 
-1. Prove that for any  $ integers a, b, ab = 0 \Rightarrow a = 0 \lor b = 0 $
+\textbf{Chapter 1}
+\begin{enumerate}
+\item Prove that for any  $ integers a, b, ab = 0 \Rightarrow a = 0 \lor b = 0 $
 
-Proof:
+\begin{enumerate}
+\item Suppose $ ab = 0 $ for some integers a, b
+\item Suppose $ a \neq 0. $ Then, there exists an integer $ a^{-1} $ such that $aa^{-1} = 1 $
+\item Then, $a^{-1} a b = b = 0 $
+\item Similarly, $ b \neq 0 \Rightarrow a = 0 $. Proved.
+\end{enumerate}
 
-1. Suppose $ ab = 0 $ for some integers a, b
+\item Prove that if x,y are positive, then $ x \mid y \Rightarrow x <= y $
+\begin{enumerate}
+\item By definition, there exists integer m such that mx = y
+\item Since y is positive, m and x are either both negative or both positive.
+\item Since x is positive, m must be positive
+\item $ m \geq 1 $
+\item Multiplying by x on both sides, $ mx \geq x $
+\item Since mx = y, $ mx = y \geq x $
+\end{enumerate}
 
-2. Suppose $ a \neq 0. $ Then, there exists an integer $ a^{-1} $ such that $
-aa^{-1} = 1 $
-
-3. Then, $a^{-1} a b = b = 0 $
-
-4. Similarly, $ b \neq 0 \Rightarrow a = 0 $. Proved.
+\item If n divides 1, $ n = \pm 1 $
+\begin{enumerate}
+\item Since n divides 1, xn = 1 for some integer x
+\item Either both x and n are positive, or both are negative.
+\item Suppose both are positive. Then, $ 0 \leq n $ and by previous result, $ n \leq 1 $
+\item Thus, n must be 1
+\item Suppose both x and n are negative. Then, $ (-x)(-n) = 1 $. By preceding
+deduction, -n = 1
+\item This means n = -1
+\item Thus, $ n = \pm 1 $
+\end{enumerate}
+\end{enumerate}
 
 \end{document}
