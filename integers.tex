@@ -3,7 +3,7 @@
 
 \textbf{Chapter 1}
 \begin{enumerate}
-\item Prove that for any  $ integers a, b, ab = 0 \Rightarrow a = 0 \lor b = 0 $
+\item Prove that for any  integers $ a, b, ab = 0 \Rightarrow a = 0 \lor b = 0 $
 
 \begin{enumerate}
 \item Suppose $ ab = 0 $ for some integers a, b
@@ -12,7 +12,7 @@
 \item Similarly, $ b \neq 0 \Rightarrow a = 0 $. Proved.
 \end{enumerate}
 
-\item Prove that if x,y are positive, then $ x \mid y \Rightarrow x <= y $
+\item Prove that if x,y are positive, then $ x \mid y \Rightarrow x \leq y $
 \begin{enumerate}
 \item By definition, there exists integer m such that mx = y
 \item Since y is positive, m and x are either both negative or both positive.
@@ -21,6 +21,8 @@
 \item Multiplying by x on both sides, $ mx \geq x $
 \item Since mx = y, $ mx = y \geq x $
 \end{enumerate}
+
+\item Prove that if x, y are negative, then $ x \mid y \Rightarrow y \leq x $
 
 \item If n divides 1, $ n = \pm 1 $
 \begin{enumerate}
@@ -33,6 +35,30 @@ deduction, -n = 1
 \item This means n = -1
 \item Thus, $ n = \pm 1 $
 \end{enumerate}
+
+\item For any nonzero integer x, if d divides x, then $ -|x| \leq d \leq |x| $
+\begin{enumerate}
+\item Suppose x is positive.
+\item If d is positive, then $ -|x| < 0 \leq d \leq |x| $
+\\ Hence, $ -|x| \leq d \leq |x| $
+\item If d is negative, then -d is positive and also divides x, implying that $ -|x| \leq -d \leq |x| $
+\\ Hence, $ -|x| \leq d \leq |x| $
+\item Suppose x is negative.
+\item If d is negative, then $ x = -|x| \leq d < 0 < |x| $
+\item Hence, $ -|x| leq d \leq |x| $
+\item If d is positive, then -d is negative and also divides x, implying that $
+-|x| \leq -d \leq |x| $
+\\ Hence, $ -|x| \leq d \leq |x| $
 \end{enumerate}
 
+\item For any nonzero integer x, integer d divides x iff -d divides x
+\begin{enumerate}
+\item Suppose d divides x. i.e. x = md, for some integer m
+\item Then, x = (-d)*(-m). Thus, -d divides x
+\item The same logic can be applied in the converse direction.
+\end{enumerate}
+
+\item For any nonzero integer x, its set of divisors is finite.
+\item For the integer 0, the set of divisors is countably infinite.
+\end{enumerate}
 \end{document}
