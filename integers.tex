@@ -72,6 +72,53 @@ deduction, -n = 1
 \item The proof stems from fact that any integer has at least 1 positive divisor (namely, the integer 1).
 \item Hence, if there are no divisors > 1, 1 will be the greatest common divisor
 \end{enumerate}
+
+\item For any integers x, y, we know there exists unique q and r, such that x = qy + r
+\\ In general, it is not true that if a is a common divisor of x and r, then a divides y
+\\ For example, 6804 = 7(930) + 294. Then, 42 is common divisor of (6804, 294) but does not divide 930
+
+\item k is a common divisor of integers a, b iff $ k \mid gcd(a, b) $
+\begin{enumerate}
+\item We know from lecture that if k is a common divisor, then $ k \mid gcd(a,b) $
+\item If $ k \mid gcd(a, b) $, then k divides a and b, by transitivity of divisibility
+\end{enumerate}
+
+
+\item Show if c divides x, y and z, then c divides gcd(x, y) and z
+\begin{enumerate}
+\item If c divides x and y, then c divides gcd(x, y). This was proved in lecture
+\end{enumerate}
+
+\item Show that $ gcd(x, y, z) \leq gcd(gcd(x,y), z) $
+\begin{enumerate}
+\item Let d = gcd(x, y, z)
+\item Since d divides x and y, then by previous result, it divides gcd(x, y)
+\item Since d divides gcd(x, y) and z, then d divides gcd(gcd(x,y), z) [By the same result]
+\item We know d are gcd(gcd(x, y), z) are both positive
+\item Hence, $ d \mid gcd(gcd(x,y), z) \Rightarrow d = gcd(x, y, z) \leq gcd(gcd(x,y), z) $
+\end{enumerate}
+
+\item Show that $ gcd(gcd(x, y), z) \leq gcd(x, y, z) $
+\begin{enumerate}
+\item We will show that gcd(gcd(x, y), z) is a positive divisor of x, y and z
+\item We already know gcd(gcd(x, y), z) is positive and divides z
+\item gcd(gcd(x, y, z)) divides gcd(x, y) and since gcd(x, y) divides both x and
+y, then by transitivity of divisibility, gcd(gcd(x, y), z) divides x and y
+\item Hence, gcd(gcd(x, y), z) is a positive divisor of x, y and z
+\item By definition of gcd, $ gcd(gcd(x, y), z) \leq gcd(x, y, z) $
+\end{enumerate}
+
+\item $ gcd(gcd(x, y), z) = gcd(x, y, z) $
+
+\item If gcd(a, b) = 1, then $ a \mid bc \Rightarrow a \mid c $
+\begin{enumerate}
+\item Suppose ak = bc, for some integer k
+\item We know there exist integers x, y such that ax + by = 1
+\item Multiplying both sides by c, cax + cby = c
+\item Simplifying, cax + aky = c = a(cx + ay)
+\item Thus, $ a \mid c $ as $ cx + ay $ is an integer 
+\end{enumerate}
+
 \end{enumerate}
 
 \end{document}
