@@ -1,0 +1,46 @@
+\documentclass{article}
+\begin{document}
+
+\begin{enumerate}
+\item Find a binary op that is associative but not commutative
+\begin{enumerate}
+\item Let $ f: Z \times Z \Rightarrow Z $ be given by  $ f(x, y) = y \in Z $
+\item Then $ f(f(a, b), c) = f(b, c) = c = f(a, c) = f(a, f(b, c)) $
+\item Thus, f is associative.
+\item However, $ f(a, b) = b \neq a = f(b, a) $
+
+\end{enumerate}
+
+\item It followss from group axioms that identity element in the group is
+unique.
+\item It follows from group axioms that for each element, its inverse is unique.
+\item Cancellation law follows from group axioms.
+
+\item This binary operation is the concatenation operation for strings.
+\begin{enumerate}
+\item Let A be the set containing all strings made from the English alphabet.
+
+\item Define $ f: A \times A \Rightarrow A $ by $ f(x, y) = xy $ for $ x, y \in A $
+
+\item For example, f(hello, world) = helloworld
+\item We see that $ f(x, y) = xy \neq yx = f(y, x) $
+\item Thus, concatentation is not commutative.
+
+\item However, $f(x, f(y, z)) = f(x, yz) = xyz = f(xy, z) = f(f(x, y), z) $
+
+\item Thus, f is associative.
+
+\end{enumerate}
+
+\item Suppose $(G, \ast) $ and $(H, \star)$ are isomorphism groups. If $(G, \ast)$ is abelian, $(H, \star) $ is abelian
+
+\item There exists bijection f from G to H, such that $ f(a \ast b) = f(a)\star f(b) $
+\item Take any arbitray x, y in H.
+\item Since f is bijective, there exists a, b in G such that $ f(a) = x, f(b) = y $
+\item Since G is abelian, $ f(a \ast b) = f(b \ast a) $
+\item Combining the above properties, $ x \star y = f(a) \star f(b) = f(a \ast b) = f(b \ast a) = f(a) \star f(b) = y \star x $
+
+\end{enumerate}
+
+\end{document}
+
