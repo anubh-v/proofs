@@ -40,6 +40,25 @@ unique.
 \item Since G is abelian, $ f(a \ast b) = f(b \ast a) $
 \item Combining the above properties, $ x \star y = f(a) \star f(b) = f(a \ast b) = f(b \ast a) = f(a) \star f(b) = y \star x $
 
+\item Let $ (G, \star) $ be a group. Show that $f: G \Rightarrow G $ given by
+$ f(g) = g^-1 $ is an isomorphism if and only if G is abelian.
+
+\begin{enumerate}
+
+\item Suppose f is an isomorphism.
+\item Then, for any arbitrary a, b in G, let k = $ a \star b $
+\item Then, $f(a \star b) = f(k) = k^-1 = b^{-1} \star a^{-1} $
+\item Since f is isomorphism, $f(a \star b) = f(a) \star f(b) $
+\item Hence, $ a^{-1} \star b^{-1} = f(a) \star f(b) = f(a \star b) = b^{-1} \star a^{-1} $
+
+\item Suppose G is abelian.
+\item Then, we want to show f is an isomorphism
+\item $f(a \star b) = f(k) = k^{-1} $ by definition of f
+\item $ k^{-1} = b^{-1} \star a^{-1} $ (property of inverse)
+\item Since G is abelian, $f(a \star b) = k^{-1} = b^{-1} \star a^{-1} = a^{-1}
+\star b^{-1} = f(a) \star f(b) $
+\end{enumerate}
+
 \end{enumerate}
 
 \end{document}
