@@ -11,8 +11,15 @@
 \begin{document}
 
 \begin{enumerate}
-\item $L^+ = L^* \iff \epsilon \in L $
-
+\item $L^+$ contains $\epsilon \iff \epsilon \in L $
+\begin{enumerate}
+\item Suppose $\epsilon \in L$. Then, since $\epsilon$ is a non-empty finite
+concatenation of a word in $L$, $epsilon \in L^+$.
+\item Suppose $L^+$ contains $\epsilon$. This means there is some concatentation
+$ u_1 \cdot u_2 \cdot ... \cdot u_n = \epsilon$ where each $u_i \in L$
+\item We know $a \cdot b = \epsilon \Rightarrow a = \epsilon = b$
+\item Hence, $u_1 = u_2 = ... u_n = \epsilon \Rightarrow \epsilon \in L$
+\end{enumerate}
 \end{enumerate}
 
 \end{document}
