@@ -20,6 +20,24 @@ $ u_1 \cdot u_2 \cdot ... \cdot u_n = \epsilon$ where each $u_i \in L$
 \item We know $a \cdot b = \epsilon \Rightarrow a = \epsilon = b$
 \item Hence, $u_1 = u_2 = ... u_n = \epsilon \Rightarrow \epsilon \in L$
 \end{enumerate}
+\item $L^+$ contains non empty string $w \iff w \in L^*$
+\item $L^* = L^+ \cup \{\epsilon\}$
+\item $ \epsilon \in L \iff L^+ = L^* $
+\begin{enumerate}
+\item Suppose $L^* = L^+$ Since $ \epsilon \in L^*$ (by definition), $\epsilon \in L^+$
+\item Then $ \epsilon \in L^+ \Rightarrow \epsilon \in L$ (proved previously)
+\item Suppose $\epsilon \in L$
+\item Then, $\epsilon \in L^+$ (proved previously)
+\item Take any $w \in L^*$. If $w$ is non empty, $w \in L^+$ as shown
+previously. If $w = \epsilon$, then we already showed $\epsilon \in L^+$ in
+statement (d). Hence $ L^* \subseteq L^+$
+\item Take any $w \in L^+$. If $w = \epsilon$, then $w \in L^*$ by definition of
+$L^*$. If $w$ is non empty, then $w \in L^*$ by definition. Hence, $L^+
+\subseteq L^*$
+\item Hence, $L^+ = L^*$
+\item In fact, we have shown that $\epsilon \in L \iff \epsilon \in L^+ \iff L^+
+= L^*$
+\end{enumerate}
 \end{enumerate}
 
 \end{document}
