@@ -1,0 +1,5 @@
+latexmk -pdf
+rm *.log
+rm *.fdb_latexmk
+rm *.fls
+rm *.aux
